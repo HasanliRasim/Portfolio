@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  padding: 10px;
+  background-color: #050918;
+}
+#header .header_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header .header_nav .header_nav_img .header_nav_img_logo {
+  width: 30%;
+  height: 30%;
+  animation-name: elementlogo;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#header .header_nav .header_nav_ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 50px;
+}
+#header .header_nav .header_nav_ul .header_nav_ul_list {
+  text-decoration: none;
+  margin-right: 70px;
+  color: rgb(255, 247, 0);
+  font-weight: bold;
+  transition: all;
+}
+#header .header_nav .header_nav_ul .header_nav_ul_list:hover {
+  transition: all linear 1s;
+  background-color: rgb(135, 2, 2);
+  transform: scale(1);
+  color: #050918;
+}
+
+#main {
+  background-image: url(../img/barca.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  object-fit: cover;
+}
+#main .main_section {
+  text-align: center;
+}
+#main .main_section .main_section_div_inf {
+  font-size: 20px;
+  color: rgb(255, 247, 0);
+}
+
+@keyframes elementlogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
